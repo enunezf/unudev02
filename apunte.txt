@@ -1,9 +1,9 @@
-CREATE DATABASE unudev02;
+CREATE DATABASE dummy;
 
-CREATE USER unudev02user WITH PASSWORD 'zxcvbnm,.';
+CREATE USER dummyuser WITH PASSWORD '123456';
 
-ALTER ROLE unudev02user SET client_encoding TO 'utf8';
-ALTER ROLE unudev02user SET default_transaction_isolation TO 'read committed';
-ALTER ROLE unudev02user SET timezone TO 'UTC';
+ALTER ROLE dummyuser SET client_encoding TO 'utf8';
+ALTER ROLE dummyuser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE dummyuser SET timezone TO 'UTC';
 
-GRANT ALL PRIVILEGES ON DATABASE unudev02 TO unudev02user;
+GRANT ALL PRIVILEGES ON DATABASE dummy TO dummyuser;
