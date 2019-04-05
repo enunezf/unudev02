@@ -1,0 +1,9 @@
+CREATE DATABASE unudev02;
+
+CREATE USER unudev02user WITH PASSWORD 'zxcvbnm,.';
+
+ALTER ROLE unudev02user SET client_encoding TO 'utf8';
+ALTER ROLE unudev02user SET default_transaction_isolation TO 'read committed';
+ALTER ROLE unudev02user SET timezone TO 'UTC';
+
+GRANT ALL PRIVILEGES ON DATABASE unudev02 TO unudev02user;

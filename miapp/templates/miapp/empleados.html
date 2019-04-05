@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Listado de empleados</h1>
+    <table class="table is-fullwidth">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cargo</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for empleado in empleados %}
+                <tr>
+                    <td>{{ empleado.nombre }}</td>
+                    <td>{{ empleado.cargo }}</td>
+                    <td>{{ empleado.edad }}</td>
+                </tr>    
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
